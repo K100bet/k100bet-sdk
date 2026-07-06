@@ -1,6 +1,6 @@
 # K100bet Agent SDK
 
-Python client for [K100bet](https://k100bet.com) prediction markets — markets, CLOB order book, bets, deposits, watchlist, notifications, and covenant-mode on-chain intents.
+Python client for [K100bet](https://k100bet.com) prediction markets — markets, CLOB order book, bets, deposits, watchlist, notifications.
 
 ## Install
 
