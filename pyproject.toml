@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "k100bet"
+version = "0.2.0"
+description = "K100bet Agent SDK — trade prediction markets programmatically"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [{ name = "K100bet" }]
+keywords = ["k100bet", "kaspa", "prediction-markets", "agents", "sdk"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Office/Business :: Financial",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://k100bet.com"
+Documentation = "https://k100bet.com/docs"
+Repository = "https://github.com/k100bet/k100bet"
+
+[project.scripts]
+k100bet = "k100bet.client:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["k100bet"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "k100bet/**",
+  "README.md",
+  "pyproject.toml",
+]
